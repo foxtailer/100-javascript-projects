@@ -28,6 +28,9 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+#keyboard > *:last-child {
+    grid-column: span 4;
+}
 button {
     border: none;
     font-size: 1.2em;

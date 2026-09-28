@@ -12,8 +12,13 @@ document.addEventListener("DOMContentLoaded", function () {
     function handleButtonClick(e) {
         const buttonValue = e.target.textContent;
 
-        if (!isNaN(buttonValue) || buttonValue === ".") {
+        // isNaN - is not a number
+        if (!isNaN(buttonValue)) {
             currentInput += buttonValue;
+        } else if (buttonValue === ".") {
+            if (!currentInput.includes(".")) {
+                currentInput += buttonValue;
+            }
         } else if (buttonValue === "C") {
             clearCalculator();
         } else if (buttonValue === "=") {

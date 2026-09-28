@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    color: red;
     padding: 0;
     box-sizing: border-box;
 }
@@ -20,10 +21,18 @@ body {
 .memory-card {
     width: 100px;
     height: 100px;
-    background-color: #ccc;
+    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
     cursor: pointer;
+}
+
+.memory-card.flipped {
+    background-color: #ccc;
+}
+
+.memory-card.matched {
+    background-color: green;
 }

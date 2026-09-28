@@ -31,6 +31,8 @@ function checkMatch() {
             setTimeout(() => {
                 card1.classList.add("matched");
                 card2.classList.add("matched");
+                card1.classList.remove("flipped");
+                card2.classList.remove("flipped");
                 checkWin();
             }, 500);
         } else {
